@@ -102,8 +102,8 @@ class MainWindow(QMainWindow):
             #   add stop button to navtb
             navtb.addAction(stop_btn)
  
-        #   set home page to searx.work
-        self.add_new_tab(QUrl('http://searx.work'), 'Homepage')
+        #   set home page to https://librex.zzls.xyz/
+        self.add_new_tab(QUrl('https://librex.zzls.xyz/'), 'Homepage')
         #   make browser window show
         self.show()
         #   set window name
@@ -114,9 +114,9 @@ class MainWindow(QMainWindow):
  
     #   adding tabs
     def add_new_tab(self, qurl = None, label ="Blank"):
-        #   set newtab homepage to searx.work
+        #   set newtab homepage to https://librex.zzls.xyz/
         if qurl is None:
-            qurl = QUrl('http://searx.work')
+            qurl = QUrl('https://librex.zzls.xyz/k')
         #   set browser engine to QWebEngineView
         browser = QWebEngineView()
         #   set network manager to the adblock one
@@ -169,8 +169,8 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("% s - CorgiWeb" % title)
     #navigating home
     def navigate_home(self):
-        #   sets url to searx.work
-        self.tabs.currentWidget().setUrl(QUrl("http://searx.work"))
+        #   sets url to https://librex.zzls.xyz/
+        self.tabs.currentWidget().setUrl(QUrl("https://librex.zzls.xyz/"))
     #   navigating to url 
     def navigate_to_url(self):
         #   text in url bar 
